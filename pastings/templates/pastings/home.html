@@ -25,7 +25,7 @@
 <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="">Pastebin</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,14 +33,13 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="btn btn-outline-success" href="">New paste <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">user</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="/basic.php">Lab 3</a>
-                        <a class="dropdown-item" href="/lab4.html">Lab 4</a>
-                        <a class="dropdown-item" href="/lab5.html">Lab 5</a>
+                        <a class="dropdown-item" href="/basic.php">Login</a>
+                        <a class="dropdown-item" href="/lab4.html">Sign Up</a>
                     </div>
                 </li>
             </ul>
@@ -56,36 +55,25 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h1 class="display-3">Hello!</h1>
-                <p>This page includes the different labs for Secure Software development</p>
+                <h2 class="display-3">New Paste</h2>
 
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h2>Lab 3</h2>
-                        <p> This lab we used php to do basic form processing
-                            <a href="/basic.php" class="btn btn-outline-primary " role="button" aria-pressed="true">Link</a>
-                        </p>
+                <form>
+                  <textarea class="form-control emmet-syntax-html" rows="14" name="html-text"></textarea>
+                  <br>
+                  Paste Name/Title:
+                  <input type="text" name="pasteName">
+                  <br>
+                  <input class="btn btn-success btn-lg center-block" type="submit" value="Submit">
+                </form>
 
-                    </li>
-                    <li class="list-group-item">
-                        <h2>Lab 4</h2>
-                    </li>
-                    <li class="list-group-item">
-                        <h2>Lab 5</h2>
-                    </li>
-                    <li class="list-group-item">
-                        <h2>Lab 6</h2>
-                    </li>
             </div>
-        </div>
-
         </div>
 
     </main>
 
     <footer class="footer text-white bg-primary">
         <div class="container">
-            <span>&copy; Bikramjit Garcha 2019</span>
+            <span>&copy; Bikramjit Garcha & Harmanjeet Singh 2019</span>
         </div>
     </footer>
 
