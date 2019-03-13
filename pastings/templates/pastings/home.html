@@ -7,5 +7,16 @@
 
 <h2 class="display-3">Welcome to PostHub!</h2>
 
-
+{% if user.is_authenticated %}
+<form>
+  Paste Name/Title:
+  <input type="text" name="pasteName">
+  <br>
+  <textarea class="form-control emmet-syntax-html" rows="14" name="html-text"></textarea>
+  <br>
+  <input class="btn btn-success btn-lg center-block" type="submit" value="Submit">
+</form>
+{% endif %}
+  <h2> Recent Pastings</h2>
+  
 {% endblock %}

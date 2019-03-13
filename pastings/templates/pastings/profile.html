@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ user.username }} {% endblock %}
+
+{% block content %}
+
+<h1> Hello {user.firstName} </h1>
+<br>
+<h2> Profile information: </h2>
+<table>
+  <tr>
+      <td><h3>Username</h3></td>
+      <td>{user.username}</td>
+  </tr>
+  <tr>
+      <td><h3>First Name</h3></td>
+      <td>{user.firstName}</td>
+  </tr>
+  <tr>
+      <td><h3>Last Name</h3></td>
+      <td>{user.lastName}</td>
+  </tr>
+  <tr>
+      <td><h3>Email</h3></td>
+      <td>{user.email}</td>
+  </tr>
+  <tr>
+      <td><h3>Password</h3></td>
+      <td><button class="btn btn-outline-success my-2 my-sm-0" type="submit" href="{% url 'password_change' %}"></button></td>
+  </tr>
+</table>
+
+<h2>My Pastings:</h2>
+
+
+{% endblock %}
