@@ -3,10 +3,10 @@
 {% block title %} PasteHub {% endblock %}
 
 {% block content %}
-<!-- Main jumbotron for a primary marketing message or call to action -->
 
 <h2 class="display-3">New Paste</h2>
 
+{% if user.is_authenticated %}
 <form>
   Paste Name/Title:
   <input type="text" name="pasteName">
@@ -15,5 +15,13 @@
   <br>
   <input class="btn btn-success btn-lg center-block" type="submit" value="Submit">
 </form>
+{% else %}
+<p> In order to create a new paste you need to be logged in! </p>
+<a href="{% url 'login' %}"> click here to login </a>
+<br>
+<a href="{% url 'signup' %}"> click here to signup </a>
+{% endif %}
+
+
 
 {% endblock %}
