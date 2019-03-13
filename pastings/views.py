@@ -5,3 +5,7 @@ from .models import Pastings
 def home(request):
     pastings = Pastings.objects
     return render(request, 'pastings/home.html', {'pastings':pastings})
+
+    def newPaste(request):
+        pastings = Pastings.objects
+        return render(request, 'pastings/paste.html', {'pastings':pastings})
